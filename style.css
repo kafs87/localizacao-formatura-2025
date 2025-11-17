@@ -105,6 +105,38 @@ h1 {
     }
 }
 
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .logo-img {
+        width: 150px;
+    }
+
+    .container {
+        padding: 45px 35px;
+        border-radius: 25px;
+        width: 95%;
+        transform: scale(1.07);
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .icon {
+        width: 32px;
+    }
+}
+
 @media (max-width: 400px) {
 
     h1 {
@@ -125,3 +157,5 @@ h1 {
         width: 110px;
     }
 }
+
+
