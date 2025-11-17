@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #3533cd, #e7aa51, #255ff1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 40px 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    text-align: center;
+    width: 90%;
+    max-width: 430px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 25px;
+    letter-spacing: .5px;
+}
+
+.btn {
+    display: block;
+    margin: 15px auto;
+    padding: 17px;
+    width: 80%;
+    background: white;
+    color: #0d0f24;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.25s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    transform: scale(1.06);
+    background: #e6e6e6;
+}
+
+.icon {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.logo-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: white;
+    font-family: "Playfair Display", serif;
+    margin-top: 10px;
+    font-size: 48px;
+}
+
+.logo-img {
+    width: 200px;
+    padding: 10px;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 95px;
+    }
+
+    .container {
+        padding: 32px 28px;
+        width: 88%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 15px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .logo-img {
+        width: 80px;
+    }
+
+    .container {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 360px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 24px;
+    }
+}
