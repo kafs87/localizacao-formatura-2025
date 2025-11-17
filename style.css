@@ -3,10 +3,10 @@ body {
     padding: 20px;
     font-family: "Inter", sans-serif;
     background: linear-gradient(135deg, #3533cd, #e7aa51, #255ff1);
-    min-height: 100dvh; /* Melhor para mobile */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* evita esmagar o conteúdo */
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-size: 300% 300%;
     animation: gradientMove 12s ease infinite;
@@ -31,14 +31,8 @@ body {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 h2 {
@@ -46,14 +40,14 @@ h2 {
     font-size: 28px;
     color: white;
     margin-bottom: 25px;
-    letter-spacing: .5px;
 }
 
 .btn {
     display: block;
     margin: 15px auto;
     padding: 17px;
-    width: 80%;
+    width: 100%;
+    max-width: 350px;
     background: white;
     color: #0d0f24;
     border-radius: 12px;
@@ -67,7 +61,6 @@ h2 {
 .btn:hover {
     transform: scale(1.06);
     background: #e6e6e6;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
 }
 
 .icon {
@@ -95,12 +88,31 @@ h1 {
 }
 
 @keyframes logoFade {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px) scale(0.96);
+    0% { opacity: 0; transform: translateY(-10px) scale(0.96); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 32px;
     }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .logo-img {
+        width: 110px;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 14px;
+        width: 100%;
     }
 }
