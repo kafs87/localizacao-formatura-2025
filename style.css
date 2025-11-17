@@ -106,3 +106,58 @@ h1 {
     margin: 0 auto;
     display: block;
 }
+
+@media (max-width: 600px) {
+    html {
+        zoom: 1.25;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 95px;
+    }
+
+    .container {
+        padding: 32px 28px;
+        width: 88%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 15px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .logo-img {
+        width: 80px;
+    }
+
+    .container {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 360px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 24px;
+    }
+}
