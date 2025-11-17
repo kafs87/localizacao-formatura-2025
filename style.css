@@ -1,15 +1,13 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 40px 0;
+    /* isso aproxima o conteúdo */
     font-family: "Inter", sans-serif;
     background: linear-gradient(135deg, #3533cd, #e7aa51, #255ff1);
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-size: 300% 300%;
     animation: gradientMove 12s ease infinite;
+    display: block;
+    /* remove o flex que estava encolhendo tudo */
 }
 
 @keyframes gradientMove {
@@ -123,9 +121,17 @@ h1 {
         font-size: 46px;
     }
 
+    .logo-area {
+        transform: scale(1.25);
+        transform-origin: top center;
+        margin-bottom: 50px;
+    }
+
     .container {
         width: 92%;
         padding: 48px 34px;
+        transform: scale(1.25);
+        transform-origin: top center;
     }
 
     h2 {
