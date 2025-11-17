@@ -105,6 +105,27 @@ h1 {
     }
 }
 
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .btn {
+        width: 90%;
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .logo-img {
+        width: 110px;
+    }
+}
+
 @media (max-width: 480px) {
 
     h1 {
@@ -136,26 +157,3 @@ h1 {
         width: 32px;
     }
 }
-
-@media (max-width: 400px) {
-
-    h1 {
-        font-size: 34px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    .btn {
-        width: 90%;
-        font-size: 16px;
-        padding: 14px;
-    }
-
-    .logo-img {
-        width: 110px;
-    }
-}
-
-
